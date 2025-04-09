@@ -98,5 +98,7 @@ Scheduler Fails: Verify the Python path and script path in Task Scheduler.
 Future Enhancements:
 
 Add a web dashboard to view results online.
+
 Support more scanning tools (e.g., Nessus).
+
 Add email notifications for new vulnerabilities.
