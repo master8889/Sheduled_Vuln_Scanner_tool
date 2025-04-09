@@ -92,7 +92,9 @@ Check the PDF and database regularly for new results.
 Troubleshooting:
 
 ZAP Not Connecting: Ensure ZAP is open on port 8080. Restart it if needed.
+
 PDF Not Created: Check if reportlab is installed and the script ran fully.
+
 Scheduler Fails: Verify the Python path and script path in Task Scheduler.
 
 Future Enhancements:
