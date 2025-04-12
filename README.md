@@ -65,6 +65,17 @@ Step 6: Check Results
 
 Open final_vuln_report.pdf to see vulnerabilities and fixes.
 Use a tool like DB Browser for SQLite to open scan_results.db and view the data.
+
+(optional)Focusing on Specific Vulnerabilities Before Attack via Scan Policy Manager:
+1.Open OWASP ZAP 2.16.1 and ensure your target website (e.g., http://juice-shop.herokuapp.com) is loaded in the "Sites" tab.
+2.Go to the top menu, click "Analyze" > "Scan Policy Manager."
+3.In the Scan Policy Manager dialog, select the "Default Policy" and click "Modify."
+4.In the Scan Policy dialog, expand the categories (e.g., "Injection," "Information Disclosure") to view individual rules.
+5.Enable only the rules for the vulnerabilities you want to focus on (e.g., "SQL Injection" or "Cross-Site Scripting (XSS)") by setting their "Threshold" to "Medium" or "High" and "Strength" to "Low" or "Medium" to balance speed and accuracy.
+6.Click "Save" to update the Default Policy, then close the dialog.
+7.Run the scan with python scan_script.py to target only the selected vulnerabilities.
+8.Review the results in the "Alerts" tab and the generated final_vuln_report.pd
+
 Option 2: Running With Scheduler (Automatic Mode)
 
 This sets the tool to run daily without manual effort.
